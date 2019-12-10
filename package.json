@@ -4,7 +4,7 @@
   "description": "Reproducible environment for question on Stack-overflow",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "preinstall": "npx npm-force-resolutions"
   },
   "author": "",
   "license": "ISC",
@@ -32,6 +32,7 @@
     "gulp-pug": "^4.0.1",
     "gulp-rename": "^2.0.0",
     "gulp-sourcemaps": "^2.6.5",
+    "npm-force-resolutions": "0.0.3",
     "plugin-error": "^1.0.1",
     "pprint": "0.0.1",
     "q": "^1.5.1",
@@ -41,5 +42,8 @@
     "stream-replace": "^1.0.0",
     "systemjs-builder": "^0.16.15",
     "through2": "^3.0.1"
+  },
+  "resolutions": {
+    "fstream": "^1.0.12"
   }
 }
