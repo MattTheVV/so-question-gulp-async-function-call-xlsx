@@ -4,7 +4,8 @@
   "description": "Reproducible environment for question on Stack-overflow",
   "main": "index.js",
   "scripts": {
-    "preinstall": "npx npm-force-resolutions"
+    "preinstall": "npx npm-force-resolutions",
+    "postinstall": "sed -i \"s/'end'/'finish'/g\" node_modules/excel/excelParser.js"
   },
   "author": "",
   "license": "ISC",
